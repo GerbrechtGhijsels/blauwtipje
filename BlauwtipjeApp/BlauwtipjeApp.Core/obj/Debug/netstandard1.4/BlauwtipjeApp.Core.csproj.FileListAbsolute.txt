@@ -1,0 +1,17 @@
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.deps.json
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.dll
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.pdb
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.csproj.CoreCompileInputs.cache
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.AssemblyInfoInputs.cache
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.AssemblyInfo.cs
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.dll
+/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.pdb
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.deps.json
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.dll
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/bin/Debug/netstandard1.4/BlauwtipjeApp.Core.pdb
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.csprojAssemblyReference.cache
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.csproj.CoreCompileInputs.cache
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.AssemblyInfoInputs.cache
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.AssemblyInfo.cs
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.dll
+/Users/gerbrechtghijsels/Projects/IOS/blauwtipjeEigen/BlauwtipjeApp/BlauwtipjeApp.Core/obj/Debug/netstandard1.4/BlauwtipjeApp.Core.pdb

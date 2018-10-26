@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="100"
+        android:background="#f5f5f5">
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_weight="30"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:padding="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Updates worden gedownload even geduld..."
+            android:textSize="@dimen/textSize"
+            android:id="@+id/text" />
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:text="Informatie over deze update"
+            android:id="@+id/titleLog" />
+        <TextView
+            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:text="Er is geen log beschikbaar"
+            android:textSize="@dimen/textSize"
+            android:id="@+id/textLog"
+            android:visibility="gone" />
+        <TextView
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Wilt u dit updaten?"
+            android:textSize="@dimen/textSize"
+            android:id="@+id/updateText" />
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#f5f5f5">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/updateYes"
+                android:text="Ja"
+                android:textSize="@dimen/textSizeSmall"
+                android:textAllCaps="false"
+                android:textColor="@color/textLight"
+                android:background="@color/primary" />
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="10dp" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/updateNo"
+                android:text="Nee"
+                android:textSize="@dimen/textSizeSmall"
+                android:textAllCaps="false"
+                android:textColor="@color/textLight"
+                android:background="@color/primary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

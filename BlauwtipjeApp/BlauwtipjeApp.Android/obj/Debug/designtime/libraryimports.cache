@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments>
+    <ManifestDocument>obj/Debug/lp/27/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/lp/28/jl/AndroidManifest.xml</ManifestDocument>
+  </ManifestDocuments>
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj/Debug/lp/27/jl/classes.jar</Jar>
+    <Jar>obj/Debug/lp/28/jl/bin/classes.jar</Jar>
+    <Jar>obj/Debug/lp/29/jl/constraint-layout-solver.jar</Jar>
+  </Jars>
+</Paths>

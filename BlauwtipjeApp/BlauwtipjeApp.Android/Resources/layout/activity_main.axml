@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:background="@color/window_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:gravity="bottom"
+        android:background="@color/window_background">
+        <BlauwtipjeApp.Droid.Components.Image.ResourceImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="top|right"
+            android:src="@drawable/blauwtipjemain" />
+        <Button
+            android:id="@+id/myButtonDeterminatie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="Determinatie"
+            android:textSize="@dimen/textSize"
+            android:textAllCaps="false"
+            android:layout_weight="25"
+            android:drawableBottom="@drawable/ic_search_white_48dp"
+            android:background="@color/primary"
+            android:textColor="@color/textLight" />
+        <Space
+            android:layout_height="3dp"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="#FFFFFF">
+        <Button
+            android:id="@+id/myButtonSoortenlijst"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Soortenlijst"
+            android:textSize="@dimen/textSize"
+            android:textAllCaps="false"
+            android:textColor="@color/textLight"
+            android:drawableBottom="@drawable/ic_list_white_48dp"
+            android:background="@color/primary"
+            android:paddingBottom="20dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp" />
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="3dp" />
+        <Button
+            android:id="@+id/myButtonInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:text="Info"
+            android:textSize="@dimen/textSize"
+            android:textAllCaps="false"
+            android:textColor="@color/textLight"
+            android:drawableBottom="@drawable/ic_info_outline_white_48dp"
+            android:background="@color/primary"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" />
+    </LinearLayout>
+</LinearLayout>

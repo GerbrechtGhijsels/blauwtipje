@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myDrawerToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+          <TextView
+              android:id="@+id/activityTitle"
+              android:layout_height="match_parent"
+              android:layout_width="wrap_content"
+              android:background="@color/primary"
+              android:text="Title!"
+              android:textColor="#fff"
+              android:textStyle="bold"
+              android:textSize="@dimen/textSizeLarge"
+              android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/SlidingListContainer"
+            android:background="#FFF">
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/myLeftDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+            <!--main content view-->
+                <LinearLayout
+                    android:id="@+id/MainContentContainer"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" />
+                <ListView
+                    android:id="@+id/LeftDrawer"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:choiceMode="singleChoice"
+                    android:divider="#FA5B28"
+                    android:dividerHeight="1dp"
+                    android:background="#ebebeb" />
+            </android.support.v4.widget.DrawerLayout>
+        </LinearLayout>
+    </FrameLayout>
+<!-- na de drawer maar binnen de frame layout moet de edittext komen -->
+</LinearLayout>

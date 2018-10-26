@@ -1,0 +1,8 @@
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/bin/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.deps.json
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/bin/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.dll
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/bin/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.pdb
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/obj/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.csproj.CoreCompileInputs.cache
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/obj/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.AssemblyInfoInputs.cache
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/obj/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.AssemblyInfo.cs
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/obj/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.dll
+/Users/gerbrechtghijsels/Projects/Blauwtipje/nl.flores.BlauwtipjeApp.Domain/obj/Release/netstandard1.4/nl.flores.BlauwtipjeApp.Domain.pdb

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardBackgroundColor="@color/cardColor"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    card_view:contentPadding="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:id="@+id/QuestionMainView"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="100"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true">
+            <FrameLayout
+                android:id="@+id/webViewContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:background="@color/cardColor"
+                android:minHeight="40dp" />
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="3dp"
+                    android:visibility="gone"
+                    android:id="@+id/indication"
+                    android:text="aantal foto's" />
+                <BlauwtipjeApp.Droid.Components.Image.ResourceImageView
+                    android:id="@+id/rowImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="3dp"
+                    android:src="@drawable/blauwtipjelogo"
+                    android:layout_marginTop="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuestionMainView"
+            android:layout_alignParentBottom="true">
+
+     
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="2dip"
+                  android:background="@color/accent" />
+
+            <Button
+                android:id="@+id/SelecteerButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Selecteer"
+                android:textSize="@dimen/textSizeSmall"
+                android:textAllCaps="false"
+                android:textColor="@color/textLight"
+                android:background="@color/primary" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

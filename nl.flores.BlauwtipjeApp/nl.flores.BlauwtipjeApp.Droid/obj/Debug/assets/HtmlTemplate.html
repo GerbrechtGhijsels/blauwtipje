@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <script src="file:///android_asset/abbr-touch.js" type="text/javascript"></script>
+    <script src="file:///android_asset/touchtap-event.js" type="text/javascript"></script>
+</head>
+<style>
+    abbr[title] {{ color: #194FFF; font-weight: bold; }}
+
+    h1, h3 {{
+        display: inline-block;
+    }}
+</style>
+<body onload="getHeight()">
+    <p> {0}</p>
+    <script>
+        abbrTouch();
+        function getHeight(data) {{
+
+                var body = document.body,
+                    html = document.documentElement;
+
+                var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+                invokeCSharpAction(height);
+            }}
+    </script>
+</body>
+</html>

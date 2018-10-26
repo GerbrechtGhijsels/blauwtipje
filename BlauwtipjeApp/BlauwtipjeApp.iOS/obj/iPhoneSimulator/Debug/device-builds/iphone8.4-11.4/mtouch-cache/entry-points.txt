@@ -1,0 +1,29 @@
+Function=xamarin_timezone_get_data
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_start_wwan
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=CreateZStream
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=CloseZStream
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=Flush
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=ReadZStream
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=WriteZStream
+	/Users/gerbrechtghijsels/Projects/Blauwtipje/BlauwtipjeApp/BlauwtipjeApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.4/mtouch-cache/1-Link/System.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

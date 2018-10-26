@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/ScrollView1">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:layout_margin="10dp">
+      <BlauwtipjeApp.Droid.Components.Image.ResourceImageView
+          android:src="@drawable/blauwtipjelogo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:maxHeight="200dp"
+          android:maxWidth="200dp"
+          android:paddingTop="20dp"
+          android:adjustViewBounds="true"
+          android:id="@+id/AnimalImage" />
+      <TextView
+              android:text="Slaknaam"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:paddingTop="20dp"
+              android:textSize="@dimen/textSizeXLarge"
+              android:id="@+id/AnimalName" />
+      <TextView
+          android:text="Scientific Slaknaam"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:paddingBottom="20dp"
+          android:textSize="@dimen/textSize"
+          android:textStyle="italic"
+          android:id="@+id/AnimalScientificName" />
+      <BlauwtipjeApp.Droid.Components.WebView.CustomWebView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/AnimalPage"
+          android:background="@color/cardColor"
+          android:textSize="@dimen/textSize"
+          android:minHeight="40dp"
+          android:paddingLeft="10dp" />
+    </TableLayout>
+  </ScrollView>
+</LinearLayout>

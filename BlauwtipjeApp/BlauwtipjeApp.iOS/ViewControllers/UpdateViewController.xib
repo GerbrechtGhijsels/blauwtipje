@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateViewController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="DownloadText" destination="361" id="name-outlet-361"/>
+                <outlet property="LogText" destination="364" id="name-outlet-364"/>
+                <outlet property="UpdateText" destination="360" id="name-outlet-360"/>
+                <outlet property="UpdateYes" destination="362" id="name-outlet-362"/>
+                <outlet property="UpdateNo" destination="363" id="name-outlet-363"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wilt u dit updaten?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="360" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="22" y="409" width="333" height="77"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="392" firstItem="360" firstAttribute="height" constant="77"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="392"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="392"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updates worden gedownload even geduld..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="361" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2">
+                    <rect key="frame" x="21" y="121" width="333" height="97"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="362" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="86" y="508" width="91" height="47"/>
+                    <state key="normal" title="Ja">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                        <mask key="constraints">
+                            <include reference="381"/>
+                            <include reference="382"/>
+                        </mask>
+                    </variation>
+                    <constraints>
+                        <constraint id="381" firstItem="362" firstAttribute="width" constant="91"/>
+                        <constraint id="382" firstItem="362" firstAttribute="height" constant="47"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="381"/>
+                            <exclude reference="382"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="363" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="201" y="508" width="91" height="47"/>
+                    <state key="normal" title="Nee">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                        <mask key="constraints">
+                            <include reference="379"/>
+                            <include reference="380"/>
+                        </mask>
+                    </variation>
+                    <constraints>
+                        <constraint id="379" firstItem="363" firstAttribute="height" constant="47"/>
+                        <constraint id="380" firstItem="363" firstAttribute="width" constant="91"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="379"/>
+                            <exclude reference="380"/>
+                        </mask>
+                    </variation>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="364" translatesAutoresizingMaskIntoConstraints="NO" text="Er is geen log beschikbaar" editable="NO" selectable="NO" hidden="YES">
+                    <rect key="frame" x="68" y="270" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="360"/>
+                    <exclude reference="361"/>
+                    <exclude reference="362"/>
+                    <exclude reference="363"/>
+                    <exclude reference="364"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="383"/>
+                    <exclude reference="384"/>
+                    <exclude reference="385"/>
+                    <exclude reference="386"/>
+                    <exclude reference="387"/>
+                    <exclude reference="388"/>
+                    <exclude reference="389"/>
+                    <exclude reference="390"/>
+                    <exclude reference="391"/>
+                    <exclude reference="394"/>
+                    <exclude reference="395"/>
+                    <exclude reference="396"/>
+                    <exclude reference="397"/>
+                    <exclude reference="398"/>
+                    <exclude reference="399"/>
+                    <exclude reference="400"/>
+                    <exclude reference="401"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="360"/>
+                    <include reference="361"/>
+                    <include reference="362"/>
+                    <include reference="363"/>
+                    <include reference="364"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="383"/>
+                    <include reference="384"/>
+                    <include reference="385"/>
+                    <include reference="386"/>
+                    <include reference="387"/>
+                    <include reference="388"/>
+                    <include reference="389"/>
+                    <include reference="390"/>
+                    <include reference="391"/>
+                    <include reference="394"/>
+                    <include reference="395"/>
+                    <include reference="396"/>
+                    <include reference="397"/>
+                    <include reference="398"/>
+                    <include reference="399"/>
+                    <include reference="400"/>
+                    <include reference="401"/>
+                </mask>
+            </variation>
+            <constraints>
+                <constraint id="383" firstItem="363" firstAttribute="leading" secondItem="362" secondAttribute="trailing" constant="24"/>
+                <constraint id="384" firstItem="362" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="86"/>
+                <constraint id="385" firstItem="2" firstAttribute="trailing" secondItem="363" secondAttribute="trailing" constant="83"/>
+                <constraint id="386" firstItem="2" firstAttribute="bottom" secondItem="363" secondAttribute="bottom" constant="112"/>
+                <constraint id="387" firstItem="2" firstAttribute="bottom" secondItem="362" secondAttribute="bottom" constant="112"/>
+                <constraint id="388" firstItem="363" firstAttribute="top" secondItem="360" secondAttribute="bottom" constant="22"/>
+                <constraint id="389" firstItem="362" firstAttribute="top" secondItem="360" secondAttribute="bottom" constant="22"/>
+                <constraint id="390" firstItem="2" firstAttribute="trailing" secondItem="360" secondAttribute="trailing" constant="20"/>
+                <constraint id="391" firstItem="360" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="22"/>
+                <constraint id="394" firstItem="2" firstAttribute="trailing" secondItem="364" secondAttribute="trailing" constant="67"/>
+                <constraint id="395" firstItem="364" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="68"/>
+                <constraint id="396" firstItem="2" firstAttribute="bottom" secondItem="364" secondAttribute="bottom" constant="269"/>
+                <constraint id="397" firstItem="364" firstAttribute="top" secondItem="2" secondAttribute="top" constant="270"/>
+                <constraint id="398" firstItem="2" firstAttribute="trailing" secondItem="361" secondAttribute="trailing" constant="21"/>
+                <constraint id="399" firstItem="361" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="21"/>
+                <constraint id="400" firstItem="361" firstAttribute="top" secondItem="2" secondAttribute="top" constant="121"/>
+                <constraint id="401" firstItem="360" firstAttribute="top" secondItem="361" secondAttribute="bottom" constant="191"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_about.png" width="32" height="30"/>
+        <image name="tab_feed.png" width="32" height="30"/>
+        <image name="profile_generic.png" width="95" height="95"/>
+        <image name="my_item_image.png" width="40" height="40"/>
+        <image name="blauwtipjelogo.png" width="251" height="321"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>

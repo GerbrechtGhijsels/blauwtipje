@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white_48dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+	<group android:id="@+id/group_Sort">
+	<item android:id="@+id/sort"
+        android:icon="@drawable/ic_sort_white"
+		android:showAsAction="ifRoom|withText"
+	    android:title="Sorteer op:"/>
+        <item android:id="@+id/Name_sort" android:title="Naam"/>
+		<item android:id="@+id/ScientifficName_sort" android:title="Wetenschappelijke naam"/>
+	</group> 
+        
+    
+</menu>

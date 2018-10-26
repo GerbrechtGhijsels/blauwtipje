@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="BtnDetermination" destination="185" id="name-outlet-185"/>
+                <outlet property="BtnInfo" destination="187" id="name-outlet-187"/>
+                <outlet property="BtnSpeciesList" destination="181" id="name-outlet-181"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="181">
+                    <rect key="frame" x="16" y="502" width="274" height="78"/>
+                    <color key="backgroundColor" red="0.26274509800000001" green="0.51764705879999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Soortenlijst">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:599:image" highlightedImage="imageView:599:highlightedImage" translatesAutoresizingMaskIntoConstraints="NO" id="184">
+                    <rect key="frame" x="32" y="30" width="536" height="344"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" highlightedImage="blauwtipjelogo.png" image="blauwtipjelogo.png"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="185">
+                    <rect key="frame" x="16" y="404" width="568" height="78"/>
+                    <color key="backgroundColor" red="0.2627450980392157" green="0.51764705882352935" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="186"/>
+                    </constraints>
+                    <state key="normal" title="Determinatie">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="187">
+                    <rect key="frame" x="310" y="502" width="274" height="78"/>
+                    <color key="backgroundColor" red="0.26274509800000001" green="0.51764705879999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="188"/>
+                    </constraints>
+                    <state key="normal" title="Info">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="184" secondAttribute="trailing" constant="32" id="371"/>
+                <constraint firstItem="184" firstAttribute="top" secondItem="2" secondAttribute="top" constant="30" id="478"/>
+                <constraint firstItem="184" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="32" id="535"/>
+                <constraint firstItem="185" firstAttribute="top" secondItem="184" secondAttribute="bottom" constant="30" id="592"/>
+                <constraint firstItem="185" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="649"/>
+                <constraint firstAttribute="trailing" secondItem="185" secondAttribute="trailing" constant="16" id="706"/>
+                <constraint firstItem="181" firstAttribute="top" secondItem="185" secondAttribute="bottom" constant="20" id="763"/>
+                <constraint firstItem="187" firstAttribute="top" secondItem="185" secondAttribute="bottom" constant="20" id="820"/>
+                <constraint firstAttribute="trailing" secondItem="187" secondAttribute="trailing" constant="16" id="888"/>
+                <constraint firstItem="187" firstAttribute="leading" secondItem="181" secondAttribute="trailing" constant="20" id="945"/>
+                <constraint firstAttribute="bottom" secondItem="187" secondAttribute="bottom" constant="20" id="1002"/>
+                <constraint firstAttribute="bottom" secondItem="181" secondAttribute="bottom" constant="20" id="1059"/>
+                <constraint firstItem="181" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="1116"/>
+                <constraint firstItem="187" firstAttribute="width" secondItem="181" secondAttribute="width" id="v6h-GG-l9T"/>
+                <constraint firstItem="185" firstAttribute="height" secondItem="187" secondAttribute="height" id="zbz-35-k7U"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="blauwtipjelogo.png" width="251" height="321"/>
+        <image name="tab_about.png" width="32" height="30"/>
+        <image name="tab_feed.png" width="32" height="30"/>
+        <image name="profile_generic.png" width="95" height="95"/>
+        <image name="my_item_image.png" width="40" height="40"/>
+    </resources>
+</document>

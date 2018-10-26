@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+	<questions>
+		<question id='1'>
+			<note>Rhinoforen zijn de steeltjes op de kop van de slak</note>
+			<choices>
+				<choice nextQuestionId='2'>
+					<text>Zonder rhinoforen</text>
+					<images>
+						<image>11</image>
+					</images>
+          
+				</choice>
+				<choice nextQuestionId='3'>
+          <text><![CDATA[Met <abbr title="Horens op de slak">rhinoforen</abbr></abbr>.]]></text>
+					<images>
+						<image>12</image>
+					</images>
+          
+				</choice>
+			</choices>
+		</question>
+		<question id='2'>
+			<note>Cerata zijn de hoorns op de rug van de slak</note>
+			<choices>
+				<choice nextResultId='1'>
+					<text>Rug met korte gezwollen cerata</text>
+					<images>
+						<image>21</image>
+					</images>
+				</choice>
+				<choice nextResultId='2'>
+					<text>Gladde rug zonder cerata</text>
+					<images>
+						<image>22</image>
+					</images>
+				</choice>
+			</choices>
+		</question>
+		<question id='3'>
+			<note>Cerata zijn de hoorns op de rug van de slak</note>
+			<choices>
+				<choice nextResultId='4'>
+					<text>Rug met dunne rode cerata</text>
+					<images>
+						<image>31</image>
+					</images>
+				</choice>
+				<choice nextResultId='3'>
+					<text>Rug zonder cerata</text>
+					<images>
+						<image>32</image>
+					</images>
+				</choice>
+			</choices>
+		</question>
+	</questions>
+	<results>
+		<slug id='1' displayname="Kwelderslak" scientificname="Alderia modesta">
+      <text>Kleurloos of bruin, groen, geel, met zwarte, bruine, donkergroene of witte vlekjes. Groene kleur van vertakkingen middendarmklier door het lichaam en de papillen heen zichtbaar. Geen koptentakels en rhinoforen, mondhoeken soms iets gelobd. Rugpapillen in maximaal 7 schuine dwarsrijen, met per rij 2-6 knotsvormige papillen. Rug vooraan zonder papillen. Eieren aanvankelijk gelig, later verkleurend naar grijs, afgezet als een worstvormige, gelatineuze massa. Schorren- en kwelders in Zeeland en Waddengebied. Plaatselijk in Zeeland langs de Ooster- en Westerschelde en in het Grevelingenmeer, alsmede op de Waddeneilanden en langs de vastelandskust van het Waddengebied. Op geschikte plaatsen niet zeldzaam, vaak samen voorkomende met de Schorrenslak Limaponta depressa. De landelijke populatie is in areaal sterk afgenomen door verlies aan geschikt biotoop. De soort is direct afhankelijk van een specifieke habitat. Vroeger was deze meer langs de Nederlandse kust aanwezig en kwam de soort algemener voor. Door zandhonger krimpt momenteel jaarlijk het areaal aan schorrengebied in de Zeeuwse delta en neemt het potentieel aan habitat voor de soort af.</text>
+			<images>
+				<image>101</image>
+			</images>
+		</slug>
+		<slug id='2' displayname="Schorrenslak" scientificname="Limapontia depressa">
+      <text>Lichtbruin tot zwart, vaak met lichtere vlekjes. Voet geel, ook rondom de geslachtsopening lichter. Groene vertakkingen van de middendarmklier kunnen door de huid schemeren. Plompe slak zonder tentakels, rhinoforen of cerata. Ogen zwart, in lichter gekleurde velden aan de buitenzijden op de kop. Bol, maar afgeplat achter op de rug. Eieren als geelwitte worstvormige klompjes op het voedsel. Schorrengebieden en kwelders, Waddengebied en Zeeland. Verspreiding: De Schorrenslak leeft langs de kust bij Den Helder en Hoek van Holland, op de kwelders van de Waddeneilanden en in de Waddenzee en in het Eems-Dollardgebied en op de schorren van de Oosterschelde. Op geschikte plaatsen niet zeldzaam.</text>
+     <images>
+				<image>201</image>
+			</images>
+		</slug>
+		<slug id='3' displayname="Groene wierslak" scientificname="Elysia viridis">
+      <text>Groen, rood of gelei-wit, met blauwe/rode puntjes. Basiskleur veroorzaakt door het voedsel; de 'bladgroenkorrels' worden ingebouwd in de lichaamscellen van de slak. Langgerekte dieren met twee over de rug gevouwen zijwaartse 'vleugels'. Kop met buisvormig opgerolde reuksprieten. Eieren geelachtig, gelegd op wier in een rond of ovaal spriraalvormig lint. In Nederland tot op heden alleen invasiegewijs in Zeeland (Oosterschelde, monding Westerschelde). Van elders is de soort niet bekend. De laatste invasie dateert uit de periode 1989-1995.</text>
+			<images>
+				<image>301</image>
+			</images>
+		</slug>
+		<slug id='4' displayname="Slanke waaierslak" scientificname="Flabellina gracilis">
+      <text>Transparant grijswit, vaak wit op koptentakels, rhinoforen en staartpunt (streep). Papilinhoud helder rood, soms geel, bruin of groen. Papiltoppen met witte ring, uiterste punt kleurloos. Slanke slak met gladde slanke papillen in 5-7 groepen. Rug niet geheel bedekt. Voet vooraan met zijpunten. Koptentakels lang, slank, rhinoforen glad. Eisnoer als gekronkelde dunne witte streng, meestal in Eudendrium takjes. Ooster- en Westerschelde, zeldzamer in Waddengebied. Wereldwijd komt de soort voor langs de kust van Noord-oost Amerika, Groenland, IJsland en van Noord-Noorwegen tot aan de Golf van Biskaje. In Nederland algemeen in de Oosterschelde en in de monding van de Westerschelde. Sinds 1996 wordt hij ook in de Grevelingen waargenomen. Hij is zeldzaam in het westelijk Waddengebied. Slakken met groen of geel gekleurde papillen zijn uitsluitend op Walcheren waargenomen. Zij voeden zich specifiek met E. album.</text>
+			<images>
+				<image>401</image>
+			</images>
+		</slug>
+	</results>
+	<images>
+		<image id='11' name="zeenaaktslakken/ALDEmode-001" extension="jpg" />
+		<image id='12' name="zeenaaktslakken/ELYSviri-001" extension="jpg" />
+		
+		<image id='21' name="zeenaaktslakken/ALDEmode-003" extension="jpg" />
+		<image id='22' name="zeenaaktslakken/LIMAdepr-003" extension="jpg" />
+		
+		<image id='31' name="zeenaaktslakken/FLABgrac-001" extension="jpg" />
+		<image id='32' name="zeenaaktslakken/ELYSviri-001" extension="jpg" />
+		
+		<image id='101' name="zeenaaktslakken/ALDEmode-006-CL" extension="jpg" />
+		<image id='201' name="zeenaaktslakken/LIMAdepr-004-CL" extension="jpg" />
+		<image id='301' name="zeenaaktslakken/groenewierslak" extension="jpg" />
+		<image id='401' name="zeenaaktslakken/slankewaaierslak" extension="jpg" />
+	</images>
+</data>
