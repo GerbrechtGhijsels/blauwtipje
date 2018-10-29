@@ -243,6 +243,7 @@
     <Compile Include="ViewControllers\UpdateViewController.designer.cs">
       <DependentUpon>UpdateViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ExtendedWebviewDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />

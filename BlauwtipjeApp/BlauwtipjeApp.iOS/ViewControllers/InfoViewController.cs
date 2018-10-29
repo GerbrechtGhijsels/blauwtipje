@@ -13,11 +13,13 @@ using WebKit;
 
 namespace BlauwtipjeApp.iOS.ViewControllers
 {
-    public partial class InfoViewController : BaseActivity<InfoPresenter<Slug>>, IInfoView , IWKUIDelegate
-    {   
+    public partial class InfoViewController : BaseActivity<InfoPresenter<Slug>>, IInfoView , IWKUIDelegate, IWKScriptMessageHandler
+    {
 
+        const string JavaScriptFunction = "function invokeCSharpAction(data){window.webkit.messageHandlers.invokeAction.postMessage(data);}";
+        WKUserContentController userController;
         private CustomWebviewHelper webviewHelper;
-        private WKWebView tempWebview;
+        private WKWebView webView;
 
         public InfoViewController() : base("InfoViewController", null)
         {
@@ -28,7 +30,7 @@ namespace BlauwtipjeApp.iOS.ViewControllers
         {
             var alertController = UIAlertController.Create("Info", message, UIAlertControllerStyle.Alert);
             alertController.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));
-            PresentViewController(alertController, true, null);
+            UIApplication.SharedApplication.KeyWindow?.RootViewController.PresentViewController(alertController, true, null);
 
             completionHandler();
         }
@@ -38,12 +40,30 @@ namespace BlauwtipjeApp.iOS.ViewControllers
         {   
             Presenter = ServiceLocator.GetService<IPresenterFactory<Slug>>().GetPresenterFor(this);
 
+            userController = new WKUserContentController();
+            var script = new WKUserScript(new NSString(JavaScriptFunction), WKUserScriptInjectionTime.AtDocumentEnd, false);
+            userController.AddUserScript(script);
 
-            tempWebview = new WKWebView(WebviewContainer.Frame, new WKWebViewConfiguration());
-            tempWebview.UIDelegate = this;
-            WebviewContainer.AddSubview(tempWebview);
+            userController.AddScriptMessageHandler(this, "invokeAction");
 
-             webviewHelper = new CustomWebviewHelper(tempWebview);
+            var config = new WKWebViewConfiguration { UserContentController = userController };
+            //config.Preferences.MinimumFontSize = 10;
+            //config.IgnoresViewportScaleLimits = true;
+            webView = new WKWebView(WebviewContainer.Frame, config)
+            {
+            };
+
+
+            webView.UIDelegate = this;
+
+            webView.ScrollView.ScrollEnabled = false;
+            webView.ScrollView.Bounces = false;
+
+            webView.NavigationDelegate = new ExtendedWebViewDelegate();
+            WebviewContainer.AddSubview(webView);
+
+            webviewHelper = new CustomWebviewHelper(webView);
+            //SetNativeControl(webView);
 
             base.ViewDidLoad();
 
@@ -65,9 +85,22 @@ namespace BlauwtipjeApp.iOS.ViewControllers
 
 
 
+        public void DidReceiveScriptMessage(WKUserContentController userContentController, WKScriptMessage message)
+        {
+            double height = Convert.ToDouble(message.Body.ToString());
+
+            CGRect fr = webView.Frame;
+            fr.Size = new CGSize(webView.Frame.Size.Width, height);
+            webView.Frame = fr;
+
+           //var wv = this.Element as WKWebView;
+            //wv.HeightRequest = height;
+
+        }
+
         public void SetInfoText(string text)
-        {   
-            webviewHelper.SetCustomWebviewText(text);
+        {
+            webviewHelper.SetCustomWebviewText(text,"4");
         }
     }
 }

@@ -8,62 +8,26 @@ using WebKit;
 
 namespace BlauwtipjeApp.iOS.Helpers
 {
-    public class CustomWebviewHelper : IWKNavigationDelegate 
+    public class CustomWebviewHelper 
     {
         private string text;
         private WKWebView webview;
+        private string textSize;
 
         public CustomWebviewHelper(WKWebView webview)
         {
             this.webview = webview;
-            this.webview.NavigationDelegate = new CustomWKNavigationDelegate();
         }
 
 
-        public class CustomWKNavigationDelegate : WKNavigationDelegate
+        public void SetCustomWebviewText(String text, string textSize)
         {
-            public CustomWKNavigationDelegate()
+            if (textSize == null)
             {
-
+                textSize = "4";
             }
 
-            public override void DecidePolicy(WKWebView webView, WKNavigationAction navigationAction, Action<WKNavigationActionPolicy> decisionHandler)
-            {
-                if (navigationAction.NavigationType == WKNavigationType.LinkActivated)
-                {
-                    if (UIApplication.SharedApplication.CanOpenUrl(new NSUrl(navigationAction.Request.Url.ToString())))
-                    {
-                        UIApplication.SharedApplication.OpenUrl(new NSUrl(navigationAction.Request.Url.ToString()));
-                        decisionHandler(WKNavigationActionPolicy.Cancel);
-                    }
-                }
-                else
-                {
-                    decisionHandler(WKNavigationActionPolicy.Allow);
-                }
-            }
-        }
-
-
-        public IntPtr Handle => throw new NotImplementedException();
-
-
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetCustomWebviewText(String text)
-        {
             this.text = text;
-
-
-            //to do
-            //int size = Resources.GetInteger(Resource.Integer.font_size);
-            //this.Settings.DefaultFontSize = size;
-
-
             //get the html template
             string content;
             var filePath = NSBundle.MainBundle.GetUrlForResource("HtmlTemplate", "html");
@@ -72,9 +36,8 @@ namespace BlauwtipjeApp.iOS.Helpers
                 content = sr.ReadToEnd();
             }
             //adds the text to the html template.
-            content = String.Format(content, text);
-            //this.LoadData(content, "utf-8", null, null);
-
+            object[] args = new object[] { text, textSize };
+            content = String.Format(content,  args);
 
 
             var nsurl = NSUrl.CreateFileUrl(new[] { NSBundle.MainBundle.BundlePath });

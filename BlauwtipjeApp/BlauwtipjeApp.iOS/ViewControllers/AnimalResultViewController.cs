@@ -90,7 +90,7 @@ namespace BlauwtipjeApp.iOS.ViewControllers
                 //SpeciesImage;
             }
 
-            webviewHelper.SetCustomWebviewText(slug.Text);
+            webviewHelper.SetCustomWebviewText(slug.Text, null);
         }
 
         [Foundation.Export("webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:")]

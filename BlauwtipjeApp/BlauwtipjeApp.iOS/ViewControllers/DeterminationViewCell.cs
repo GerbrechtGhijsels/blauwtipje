@@ -62,7 +62,7 @@ namespace BlauwtipjeApp.iOS.ViewControllers
             this.indexPath = indexPath;
             this.choice = choice;
             webviewHelper = new CustomWebviewHelper(tempWebview);
-            webviewHelper.SetCustomWebviewText(choice.Text);
+            webviewHelper.SetCustomWebviewText(choice.Text, null);
             var decoder = new WebP.Touch.WebPCodec();
             var image = decoder.Decode(choice.ImageList[0].Content);
 
