@@ -14,16 +14,8 @@ namespace BlauwtipjeApp.iOS.ViewControllers
     [Register ("InfoViewController")]
     partial class InfoViewController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView WebviewContainer { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (WebviewContainer != null) {
-                WebviewContainer.Dispose ();
-                WebviewContainer = null;
-            }
         }
     }
 }

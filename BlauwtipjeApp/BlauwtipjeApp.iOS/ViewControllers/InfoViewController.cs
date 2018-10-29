@@ -35,11 +35,9 @@ namespace BlauwtipjeApp.iOS.ViewControllers
             completionHandler();
         }
 
-
-        public override void ViewDidLoad()
-        {   
-            Presenter = ServiceLocator.GetService<IPresenterFactory<Slug>>().GetPresenterFor(this);
-
+        public override void LoadView()
+        {
+            base.LoadView();
             userController = new WKUserContentController();
             var script = new WKUserScript(new NSString(JavaScriptFunction), WKUserScriptInjectionTime.AtDocumentEnd, false);
             userController.AddUserScript(script);
@@ -49,21 +47,24 @@ namespace BlauwtipjeApp.iOS.ViewControllers
             var config = new WKWebViewConfiguration { UserContentController = userController };
             //config.Preferences.MinimumFontSize = 10;
             //config.IgnoresViewportScaleLimits = true;
-            webView = new WKWebView(WebviewContainer.Frame, config)
+            webView = new WKWebView(View.Frame, config)
             {
             };
-
-
             webView.UIDelegate = this;
 
-            webView.ScrollView.ScrollEnabled = false;
+            webView.ScrollView.ScrollEnabled = true;
             webView.ScrollView.Bounces = false;
 
             webView.NavigationDelegate = new ExtendedWebViewDelegate();
-            WebviewContainer.AddSubview(webView);
+            View.AddSubview(webView);
+        }
+
+        public override void ViewDidLoad()
+        {   
+            Presenter = ServiceLocator.GetService<IPresenterFactory<Slug>>().GetPresenterFor(this);
+
 
             webviewHelper = new CustomWebviewHelper(webView);
-            //SetNativeControl(webView);
 
             base.ViewDidLoad();
 
@@ -91,7 +92,7 @@ namespace BlauwtipjeApp.iOS.ViewControllers
 
             CGRect fr = webView.Frame;
             fr.Size = new CGSize(webView.Frame.Size.Width, height);
-            webView.Frame = fr;
+            //webView.Frame = fr;
 
            //var wv = this.Element as WKWebView;
             //wv.HeightRequest = height;
